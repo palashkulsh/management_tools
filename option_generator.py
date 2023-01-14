@@ -26,17 +26,10 @@ merge_format = workbook.add_format({
 #worksheet.merge_range('B7:D8', 'Merged Range', merge_format)
 
 inputs = {
-    "A":['a1','a2','a3'],
-    "B":['b1','b2','b3'],
-    "C":['c1','c2','c3'],
-    "d":["d1","d2"],
-    "e":["e1",'e2','e3','e4']
-}
-
-inputs = {
-    "os": ["u18 patched","u20"],
-    "nginx": ["1.13","1.19","1.21"],
-    "nodejs": ["8.9.4","long term stable"]
+    "kafka_version":['2x','3x'],
+    "logstash_compatible":['yes','no'],
+    "nodejs_library_compatible":['yes','no'],
+    "other_Team_compatible":["yes","no"],
 }
 
 total_columns = len(inputs)
